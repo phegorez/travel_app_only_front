@@ -21,8 +21,8 @@ function Footer() {
                         {FOOTER_LINKS.map((columns) => (
                             <FooterLink title={columns.title}>
                                 <ul className='regular-14 flex flex-col gap-4 text-gray-30'>
-                                    {columns.links.map((link, index) => (
-                                        <Link href='/' key={index}>{link}</Link>
+                                    {columns.links.map((link) => (
+                                        <Link href='/' key={link}>{link}</Link>
                                     ))}
                                 </ul>
                             </FooterLink>
@@ -50,8 +50,8 @@ function Footer() {
                         <div className='flex flex-col gap-5'>
                             <FooterLink title={SOCIALS.title}>
                                 <ul className='regular-14 flex gap-4 text-gray-30'>
-                                    {SOCIALS.links.map((link, index) => (
-                                        <Link href='/' key={index}>
+                                    {SOCIALS.links.map((link) => (
+                                        <Link href='/' key={link}>
                                             <Image
                                                 src={link}
                                                 alt='logo'
