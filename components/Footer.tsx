@@ -18,9 +18,9 @@ function Footer() {
                         />
                     </Link>
                     <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
-                        {FOOTER_LINKS.map((columns) => (
+                        {FOOTER_LINKS.map((columns, index) => (
                             <FooterLink title={columns.title}>
-                                <ul className='regular-14 flex flex-col gap-4 text-gray-30'>
+                                <ul className='regular-14 flex flex-col gap-4 text-gray-30' key={index}>
                                     {columns.links.map((link) => (
                                         <Link href='/' key={link}>{link}</Link>
                                     ))}
@@ -30,10 +30,10 @@ function Footer() {
 
                         <div className='flex flex-col gap-5'>
                             <FooterLink title={FOOTER_CONTACT_INFO.title}>
-                                {FOOTER_CONTACT_INFO.links.map((link) => (
+                                {FOOTER_CONTACT_INFO.links.map((link, index) => (
                                     <Link 
                                         href='/'
-                                        key={link.label}
+                                        key={index}
                                         className='flex gap-4 md:flex-col lg:flex-row'
                                     >
                                         <p className='whitespace-nowrap'>
@@ -50,8 +50,8 @@ function Footer() {
                         <div className='flex flex-col gap-5'>
                             <FooterLink title={SOCIALS.title}>
                                 <ul className='regular-14 flex gap-4 text-gray-30'>
-                                    {SOCIALS.links.map((link) => (
-                                        <Link href='/' key={link}>
+                                    {SOCIALS.links.map((link, index) => (
+                                        <Link href='/' key={index}>
                                             <Image
                                                 src={link}
                                                 alt='logo'
