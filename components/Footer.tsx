@@ -50,8 +50,8 @@ function Footer() {
                         <div className='flex flex-col gap-5'>
                             <FooterLink title={SOCIALS.title}>
                                 <ul className='regular-14 flex gap-4 text-gray-30'>
-                                    {SOCIALS.links.map((link) => (
-                                        <Link href='/' key={link}>
+                                    {SOCIALS.links.map((link, index) => (
+                                        <Link href='/' key={index}>
                                             <Image
                                                 src={link}
                                                 alt='logo'
@@ -68,7 +68,6 @@ function Footer() {
 
                 <div className="border bg-gray-20" />
                 <p className='regular-14 w-full text-center text-gray-30'>2024 Sanctuary | All right reserved</p>                  
-
             </div>
         </footer>
     )
