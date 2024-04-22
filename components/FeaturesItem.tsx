@@ -4,12 +4,13 @@ type FeaturesItemProps = {
     title: string,
     icon: string,
     variant: string
-    description: string
+    description: string,
+    key: number
 }
 
-function FeaturesItem({title, icon, variant, description }: FeaturesItemProps) {
+function FeaturesItem({title, icon, variant, description, key }: FeaturesItemProps) {
     return (
-        <li className='flex w-full flex-1 flex-col items-start'>
+        <li className='flex w-full flex-1 flex-col items-start' key={key}>
             <div className='rounded-full p-4 lg:p-7 bg-green-50'>
                 <Image
                     src={icon}

@@ -21,8 +21,8 @@ function Footer() {
                         {FOOTER_LINKS.map((columns) => (
                             <FooterLink title={columns.title}>
                                 <ul className='regular-14 flex flex-col gap-4 text-gray-30'>
-                                    {columns.links.map((link) => (
-                                        <Link href='/'>{link}</Link>
+                                    {columns.links.map((link, index) => (
+                                        <Link href='/' key={index}>{link}</Link>
                                     ))}
                                 </ul>
                             </FooterLink>
