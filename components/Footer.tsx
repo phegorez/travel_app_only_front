@@ -32,7 +32,7 @@ function Footer() {
                         ))}
 
 
-                        {/* <div className='flex flex-col gap-5'>
+                        <div className='flex flex-col gap-5'>
                             <FooterLink title={FOOTER_CONTACT_INFO.title}>
                                 {FOOTER_CONTACT_INFO.links.map((link, index) => (
                                     <Link
@@ -66,7 +66,7 @@ function Footer() {
                                     ))}
                                 </ul>
                             </FooterLink>
-                        </div> */}
+                        </div>
 
                     </div>
                 </div>
