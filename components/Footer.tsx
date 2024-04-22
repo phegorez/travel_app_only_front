@@ -19,11 +19,11 @@ function Footer() {
                     </Link>
                     <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
 
-                        {FOOTER_LINKS.map((columns, index) => (
-                            <FooterLink key={index} title={columns.title}>
+                        {FOOTER_LINKS.map((columns, indexOuter) => (
+                            <FooterLink key={indexOuter} title={columns.title}>
                                 <ul className='regular-14 flex flex-col gap-4 text-gray-30'>
-                                    {columns.links.map((link, index) => (
-                                        <Link href='/' key={index}>{link}</Link>
+                                    {columns.links.map((link, indexInner) => (
+                                        <Link href='/' key={`${indexOuter}-${indexInner}`}>{link}</Link>
                                     ))}
                                 </ul>
                             </FooterLink>
