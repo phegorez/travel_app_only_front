@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 type FooterLinkProps = {
     title: string,
-    children: React.ReactNode
+    children: React.ReactNode,
 }
 
 function FooterLink({ title, children }: FooterLinkProps) {
