@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Travel",
+  title: "Sanctuary Travel",
   description: "Travel UI/UX App for Camping",
 };
 
