@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <Link href="/">
-                <Image src="/Hilink-logo.svg" alt="logo" width={74} height={29} />
+                <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
             </Link>
 
             <ul className="hidden h-full gap-12 lg:flex">
